@@ -1,0 +1,245 @@
+<!DOCTYPE=html>
+<html>
+<head>
+<meta charset='utf-8'>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.jcarousel.min.js"></script>
+<script src="index.js"></script>
+<style type="text/css">
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 5px solid #fff;
+    width: 400px;
+    height: 300px;
+}
+ 
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.jcarousel li {
+    float: left;
+}
+ 
+.jcarousel-control-prev {
+    left: -50px;
+}
+ 
+.jcarousel-control-next {
+    right: -50px;
+}
+ 
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    font-size: 25px;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 25px;
+}
+ 
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+ 
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+ 
+.jcarousel-pagination a {
+    text-decoration: none;
+    background: #fff;
+    color: #4E443C;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+ 
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+ 
+body{
+    background: yellow;
+}
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+</style>
+
+<h1 class="heading" style="font-family:Verdana">
+The history of Linux
+</h1>
+</head>
+<body>
+<hr/>
+<div class="maindiv">
+<div class="expandableandcollapsiblediv">
+<img src="assets/up.png" id="i1" class="arrow"></img><h3 id="h3">Introduction </h3>
+<div class="content">
+<p class="text">Linux is a family of operating systems. The first Linux kernel was made public on September 17, 1991. It is the world's most widely used platform across many device types.
+</p>
+<p>An operating system has the following components:
+<br/>
+<ul>
+<li>
+Bootloader –  The software that manages the boot process of your computer. 
+<br/>
+
+<li>
+Kernel – The kernel is the core of the system and manages the CPU, memory, and peripheral devices. 
+</li>
+<br/>
+<li>
+Init system – This is a sub-system that bootstraps the user space and controls daemons. One of the most widely used init systems is systemd. 
+It is the init system that manages the boot process, once the initial booting is handed over from the bootloader (i.e., GRUB).
+</li>
+<br/>
+<li>
+Daemons – Background services (printing, audio, scheduling, etc.) that either start up during boot or after you log into the desktop.
+</li>
+<br/>
+<li>
+Graphical server – The sub-system that displays the graphics on your monitor.
+</li>
+<br/>
+<li>
+Desktop environment – An implementation of the 'desktop metaphor', which is made of a bundle of programs running on top of an OS that share a common graphical 
+user interface, sometimes described as a graphical shell. There are many desktop environments to choose from (GNOME, Cinnamon, Mate, Pantheon, Enlightenment, KDE, Xfce, etc.). 
+</li>
+<br/>
+<li>
+Applications – Linux offers thousands upon thousands of high-quality software titles that can be installed. Most modern Linux distributions include tools that centralize and simplify application installation. 
+For example, Ubuntu Linux has the Ubuntu Software Center (a rebrand of GNOME Software) which allows you to quickly search among the thousands of apps and install them. Usually, package managers are used 
+for managing packages from the command line.
+</li>
+</ul>
+<p class="fact" style="width:125px">Did you know?</p><p class="facttext">Various versions of Linux exist for virtually every conceivable type of electronic device, including PCs, servers, smartphones, tablets, IoT devices, and more!</p>
+</div>
+</div>
+</div>
+<br/>
+<hr/>
+<div class="maindiv">
+<div class="expandableandcollapsiblediv">
+<img id="i1" src="assets/up.png" class="arrow"></img><h3 id="h3">Early days </h3>
+<div class="content">
+<p class="text">
+The inspiration for UNIX came from the Multics project at Bell Labs. This project aimed to build a multi-user operating system with single-level storage, dynamic linking, 
+and a hierarchical file system. The project was done in collaboration with AT&T. However, this project came to an end in 1969 due to financial issues.
+</p>
+<p class="text">
+Even after the discontinuation of the project, two scientists, Ken Thompson and Dennis Ritchie, continued to work on it. Later, they decided to rewrite the 
+operating system in C. This system was named ‘Unix‘. It quickly gained popularity and by the 1980s, major organizations like IBM and HP were creating their own 
+Unix-based systems. The reason for UNIX gaining popularity was its availability and portability. Unix was proprietary in its early days. 
+</p>
+<p class="text">In 1983, Richard Stallman began the GNU project to create a free UNIX-like operating system. He wrote the GPL (GNU General Public License) as a part of his 
+project. By the 1990s, there was enough software to build a complete operating system. However, Hurd, the GNU kernel, couldn’t pull enough development work,
+leaving GNU incomplete.
+<p class="text">
+In 1987, an American-Dutch professor, Andrew S. Tannenbaum, wrote a Unix-like system called MINIX for academic use. 
+The source code of MINIX was made available for everyone; however, MINIX couldn’t be modified or redistributed. 
+MINIX’s 16-bit architecture wasn’t well adapted to Intel’s increasingly popular i386 design for PCs. It became highly expensive for private users to use UNIX for i386-based personal computers.
+</p>
+<br/>
+<img id="kdpic" src="assets/Ken_Dennis.png"></img>
+</div>
+</div>
+</div>
+<br/>
+<hr/>
+
+<div class="maindiv">
+<div class="expandableandcollapsiblediv">
+<img src="assets/up.png" id="i1" class="arrow"></img><h3 id="h3">Early development and licensing</h3>
+<div class="content">
+<p class="text">In order to facilitate development, the files were uploaded to the FTP server (ftp.funet.fi) of FUNET in September 1991. Much of the development of Linux has been done over the waves of the Internet and USENET, a worldwide electronic news and discussion forum with a heavy contingent of 'newsgroups'- discussion areas devoted to a particular topic. Not suprisingly, there are a number of USENET newsgroups available for discussions about Linux.</p>
+
+<p class="text"> The original Linux newsgroup was alt.os.linux, and was created to move some of the discussions about Linux out of comp.os.minix and the various mailing lists. Soon, the traffic on alt.os.linux grew to be large enough that a newsgroup in the comp hierarchy was warranted; a vote was taken in February of 1992, and comp.os.linux was created. 'comp.os.linux' quickly became one of the most popular (and loudest) USENET groups; more popular than any other comp.os group. In December of 1992, a vote was taken to split the newsgroup in order to reduce traffic; only comp.os.linux.announce passed this vote. In July of 1993, the group was finally split into the new hierarchy. Almost 2000 people voted in the comp.os.linux reorganization, making it one of the largest USENET Call For Votes ever. 
+</p>
+
+<p class="text">Torvalds first published the Linux kernel under its own license, which had a restriction on commercial activity. The software to use with the kernel was developed as a part of the GNU project and was licensed under the GNU General Public License. The first release of the Linux kernel, Linux 0.01, included a binary of the Bash shell. In 1992, he suggested releasing the kernel under the GNU General Public License. He first announced this decision in the release notes of version 0.12. In the middle of December 1992 he published version 0.99 using the GNU GPL. Linux and GNU developers worked to integrate GNU components with Linux to make a fully functional and free operating system.</p>
+<div id="divInfoBox" style="display:inline-block"><img src="assets/i.png" style="width:22px;height:22px"></img><p class="desc"></p></div>
+
+<p class=text">Fun fact: Ari Lemmke, who was one of the volunteer administrators for the FTP server (called 'Freax') at the Helsinki University of Technology (HUT) at the time, did not think that 'Freax' was a good name. Thus, he named the project 'Linux' on the server without consulting Torvalds. Later, however, Torvalds agreed to use the name 'Linux'. </p>
+
+<p class="text">Debian Linux was first announced on August 16, 1993, by Ian Murdock, who initially called the system "the Debian Linux Release". Before Debian's release, the Softlanding Linux System (SLS) had been a popular Linux distribution and the basis for Slackware. The perceived poor maintenance and prevalence of bugs in SLS motivated Murdock to launch a new distribution. Debian 0.01, released on September 15, 1993, was the first of several internal releases.
+</p>
+</div>
+</div>
+</div>
+<br/>
+<hr/>
+
+<div class="maindiv">
+<div class="expandableandcollapsiblediv">
+<img src="assets/up.png" id="i1" class="arrow"></img><h3 id="h3">Linux in the present day</h3>
+<div class="content">
+<p>The expanded use of Linux systems by traditional desktop users as well as operators of server systems has been driven by the desire to minimize software costs, increase network security, and support for open-source philosophical principles. In recent years, several governments, at various levels, have enacted policies shifting state-owned computers to Linux from proprietary software regimes.
+<p/>
+<p>
+In August 2010, Jeffrey Hammond, principal analyst at Forrester Research, declared that "Linux has crossed the chasm to mainstream adoption," a statement attested by the large number of enterprises that had transitioned to Linux during the late-2000s recession. In a company survey completed in the third quarter of 2009, 48% of surveyed companies reported using an open-source operating system. Linux powers many web services (e.g., Google, Amazon, Facebook, eBay, Twitter, Yahoo!, etc.). Using webpage hits as a measure, until 2008, Linux accounted for only about 1% of desktop market share, while Microsoft Windows operating systems held more than 90%.
+<p/>
+<p>
+Some portable embedded devices like media players have firmware that is Linux-based. A community-driven fully free and open-source project exists, called Rockbox. In-vehicle infotainment hardware usually involves some kind of display, either built into the dashboard or additional displays. Supercomputers, Japan's bullet trains, traffic control, Toyota IVI, NYSE, CERN, FAA air traffic control, nuclear submarines, and some of the most frequently visited websites on the internet all use Linux.
+</p>
+</div>
+</div>
+</div>
+<br/>
+<hr/>
+
+<div class="wrapper">
+  <h2 style="font-family:Verdana;color:white;">Common Linux distributions and their features</h2>
+  <div class="jcarousel-wrapper" >
+  <div class="jcarousel">
+  <ul>
+    <li><img  width="400" height="300" src="assets/debian.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/ubuntu.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/kali.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/redhat.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/fedora.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/opensuse.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/arch.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/manjaro.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/gentoo.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/slackware.png" alt=""></img></li>
+    <li><img  width="400" height="300" src="assets/supergamer.png" alt=""></img></li>  
+  </ul>
+  </div>
+  <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+  <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+  </div>
+  <br/>
+  <p class="jcarousel-pagination" style="position:relative"></p>
+  <p id="currentImg"></p>
+</div>
+
+</body>
+</html>
